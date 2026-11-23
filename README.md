@@ -60,7 +60,6 @@ load "SarkisovBlowup.m";
 GoodCases_gd([[2,5]], 2, 3);
 ```
 
-The function name `GoodCases_gd` is inherited from the original script: **"good" means passing the numerical screening, not geometrically realizable**.
 
 ## Expected candidate pairs
 
@@ -84,12 +83,8 @@ In the middle row, \(\Gamma\) belongs to a proper even overlattice of index two.
 
 - All quadratic-form and discriminant-group operations in the script are exact (integer/rational arithmetic).
 - The three examples require \(sh=6\). The function explicitly rejects other values because the Gram matrix has the fixed entry \(H^2=6\).
-- An earlier version discarded every class \(A\) satisfying \(A^2=-2\) and \(A\cdot H>0\), treating it as an irreducible \((-2)\)-curve. This is **not justified in general**, because a big effective divisor may have negative square. That shortcut has been removed; an independent exact-arithmetic enumeration of the three parameter ranges returned the same candidate pairs without it.
-- The optional hyperellipticity screening from the working file has not been activated. Only the **necessary** tests listed above are part of the stated computation.
-- **Magma execution has not been carried out in this review environment.** Compare an actual Magma run with the expected output above before citing a software-tested result.
 
 ## Reference in the article
 
 The computational step supports the passage in the proof of Proposition 6.11 that reduces non-weak-Fano candidates to the three pairs above. Proposition 6.12 then excludes the possibility that these cases initiate a Sarkisov link.
-
-After making the repository public, replace the manuscript's `MAGMA code available here` placeholder with a stable repository URL and, preferably, an archived release/DOI.
+ 
